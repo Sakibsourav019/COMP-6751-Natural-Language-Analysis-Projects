@@ -1,0 +1,31 @@
+Mentioned true/expected outputs are derived from https://corenlp.run/
+
+godfather is a wonderful film but dull story
+expected: Negative
+output: positive
+
+godfather has a gut-wrenching impact and is a good movie
+expected: Positive
+output: neutral
+
+this compelling story with gut-wrenching impact
+expected: Positive
+output: neutral
+
+this may not have the dramatic gut-wrenching impact of other holocaust films, but it's a compelling story, mainly because of the way it's told by the people who were there
+expected: positive
+output: neutral
+
+
+it has low impact but it's a compelling story
+expected: Positive
+result: neutral
+
+it's a compelling story, but it has low impact
+expected: Negative
+output: positive
+
+it has gut-wrenching impact and it is a compelling story
+expected: Positive
+output: neutral
+

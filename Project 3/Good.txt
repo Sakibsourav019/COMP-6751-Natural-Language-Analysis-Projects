@@ -1,0 +1,26 @@
+it is a compelling story
+expected and output: Positive
+
+it has low impact
+expected and output: Negative
+
+this does not have gut-wrenching impact but it's a compelling story
+expected and output: Positive
+
+the way it's told by the people who were there
+expected and output: Neutral
+
+a perfect example
+expected and output: Positive
+
+manipulative movie making
+expected and output: Negative
+
+shamelessly manipulative movie making
+expected and output: Negative
+
+well-intentioned movie making
+expected and output: Positive
+
+rancid movie making
+expected and output: Negative

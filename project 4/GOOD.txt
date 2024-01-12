@@ -1,0 +1,47 @@
+Mentioned true outputs are checked/derived from https://corenlp.run/
+
+
+he is not happy
+expected and output of my model: Negative
+
+this does not have gut-wrenching impact but it's a compelling story
+expected and output of my model: Positive
+
+well-intentioned but manipulative movie making
+expected and output of my model: neutral
+
+a perfect example of well-intentioned but manipulative movie making
+expected and output of my model: Positive
+
+a perfect example of rancid well-intentioned but shamelessly manipulative movie making
+expected and output of my model: Positive
+
+enya likes films
+expected and output of my model: Neutral
+
+a perfect example
+expected and output of my model: Positive
+
+manipulative movie making
+expected and output of my model: Negative
+
+shamelessly manipulative movie making
+expected and output of my model: Negative
+
+well-intentioned movie making
+expected and output of my model: Positive
+
+it is a compelling story
+expected and output of my model: Positive
+
+it has low impact
+expected and output of my modelt: Negative
+
+the way it's told by the people who were there
+expected and output of my model: Neutral
+
+rancid movie making
+expected and output of my model: Negative
+
+The godfather is a good movie
+expected and output of my model: Positive

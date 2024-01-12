@@ -1,0 +1,67 @@
+# Rules for sentences
+S[SEN=?s] -> NP[SEN=?s] VP[SEN=?s] | CC NP[SEN=?s] VP[SEN=?s] | NP[SEN=?s] | S[SEN=?s] S[SEN=?s]
+S[SEN=neut] -> NP[SEN=pos] VP[SEN=neg] | NP[SEN=neg] VP[SEN=pos] | CC NP[SEN=pos] VP[SEN=neg] | CC NP[SEN=neg] VP[SEN=pos] | VP[SEN=neut] | S[SEN=pos] S[SEN=neg] | S[SEN=neg] S[SEN=pos]
+
+SBAR[SEN=?s] -> WHNP S[SEN=?s]
+
+# Rules for noun phrases
+NP[SEN=?s] -> PRP[SEN=?s] | NNP[SEN=?s] | NNS[SEN=?s] | JJ[SEN=?s] NN | DET[SEN=?s] | DET JJ[SEN=?s] NN | DET JJ[SEN=?s] JJ[SEN=?s] NN | JJ[SEN=?s] NN | NP[SEN=?s] PP[SEN=?s] 
+NP[SEN=?s] -> JJ[SEN=?s] NN NN | VB NP[SEN=?s] PP[SEN=?s] | NP[SEN=?s] CC NP[SEN=?s] | NP[SEN=?s] NP[SEN=?s] | NP[SEN=?s] VP[SEN=?s] | NP[SEN=?s] SBAR | DET NNS | DET NN 
+NP[SEN=?s] -> JJ[SEN=?s] NNP[SEN=?s] NNS | ADJP[SEN=?s] NN | ADJP[SEN=?s] NN NN
+
+NP[SEN=pos] -> NP[SEN=neut] VP[SEN=pos] | NP[SEN=pos] VP[SEN=neut] | DET JJ[SEN=neg] JJ[SEN=pos] NN | DET JJ[SEN=neut] JJ[SEN=pos] NN | DET JJ[SEN=pos] JJ[SEN=neut] NN 
+NP[SEN=pos] -> NP[SEN=neg] CC-B NP[SEN=pos] | NP[SEN=neut] CC NP[SEN=pos] | NP[SEN=pos] CC NP[SEN=neut] |  NP[SEN=neut] PP[SEN=pos]
+
+NP[SEN=neg] -> NP[SEN=neut] VP[SEN=neg] | NP[SEN=neg] VP[SEN=neut] | DET JJ[SEN=pos] JJ[SEN=neg] NN | DET JJ[SEN=neut] JJ[SEN=neg] NN | DET JJ[SEN=neg] JJ[SEN=neut] NN 
+NP[SEN=neg] -> NP[SEN=pos] CC-B NP[SEN=neg] | NP[SEN=neut] CC NP[SEN=neg] | NP[SEN=neg] CC NP[SEN=neut] | NP[SEN=neut] PP[SEN=neg]
+
+NP[SEN=neut] -> NP[SEN=pos] VP[SEN=neg] | NP[SEN=neg] VP[SEN=pos] | NP[SEN=neg] CC-A NP[SEN=pos] | NP[SEN=pos] CC-A NP[SEN=neg]
+NP[SEN=neut] -> NP[SEN=pos] PP[SEN=neg] | NP[SEN=neg] PP[SEN=pos]
+
+
+# Rules for verb phrases
+VP[SEN=?s] -> VBZ NP[SEN=?s] | VB NP[SEN=?s] | VBZ RB VP | VBZ RB JJ[SEN=?s] | MD RB VP[SEN=?S] | VBN[SEN=?s] PP[SEN=?s] | VBD[SEN=?s] ADVP | VBZ[SEN=?s] VBN[SEN=?s]
+VP[SEN=pos] -> VBZ RB-N VP[SEN=neg] | VBZ RB-N JJ[SEN=neg] | MD RB-N VP[SEN=neg]
+VP[SEN=neg] -> VBZ RB-N VP[SEN=pos] | VBZ RB-N JJ[SEN=pos] | MD RB-N VP[SEN=pos]
+VP[SEN=neut] -> VBZ RB-N VP[SEN=neut] | VBZ RB-N JJ[SEN=neut] | MD RB-N VP[SEN=neut]
+
+# Rules for adjective phrases
+ADJP[SEN=?s] -> RB JJ[SEN=?s] | ADJP[SEN=?s] CC ADJP[SEN=?s] | ADJP[SEN=?s] JJ[SEN=?s] | JJ[SEN=?s]
+ADJP[SEN=pos] -> RB-N JJ[SEN=neg] | ADJP[SEN=neg] CC-B ADJP[SEN=pos] | ADJP[SEN=neut] CC ADJP[SEN=pos] | ADJP[SEN=neg] JJ[SEN=pos] | ADJP[SEN=neut] JJ[SEN=pos]
+ADJP[SEN=neg] -> RB-N JJ[SEN=pos] | ADJP[SEN=pos] CC-B ADJP[SEN=neg] | ADJP[SEN=neut] CC ADJP[SEN=neg] | ADJP[SEN=pos] JJ[SEN=neg] | ADJP[SEN=neut] JJ[SEN=neg]
+ADJP[SEN=neut] -> RB-N JJ[SEN=neut]
+
+# Miscellaneous rules
+PP[SEN=?s] -> IN NP[SEN=?s] | ADVP IN IN NP[SEN=?s]
+ADVP -> RB
+WHNP -> WP
+ADVP -> RB
+
+# Lexicon
+NN[SEN=neut] -> "story" | "impact" | "example" | "movie" | "making" | "way"
+NNS[SEN=neut] -> "dogs" | "films" | "people"
+NNP[SEN=neut] -> "kim" | "holocaust"
+PRP[SEN=neut] -> "it" | "he"
+
+VB[SEN=neut] -> "have"
+VBZ[SEN=neut] -> "is" | "likes" | "has" | "does"
+VBN[SEN=neut] -> "told"
+VBD[SEN=neut] -> "were"
+
+DET[SEN=neut] -> "a" | "an" | "the" | "this"
+ 
+JJ[SEN=pos] -> "perfect" | "happy" | "well-intentioned" | "compelling"
+JJ[SEN=neg] -> "low" | "gut-wrenching" | "manipulative" | "rancid"
+JJ[SEN=neut] -> "dramatic" | "other"
+
+
+CC -> CC-B | CC-A
+CC-B -> "but"
+CC-A -> "and"
+
+RB -> "mainly" | "there" | "shamelessly"
+RB-N -> "not"
+
+IN -> "with" | "of" | "by" | "because"
+MD -> "may"
+WP -> "who"

@@ -1,0 +1,112 @@
+kim likes dogs
+Total trees = 3
+'pos': 0 'neg': 0 'neut': 3 
+Sentiment: 'neut'
+
+
+it is a compelling story
+Total trees = 1
+'pos': 1 'neg': 0 'neut': 0 
+Sentiment: 'pos'
+
+
+it has low impact
+Total trees = 2
+'pos': 0 'neg': 2 'neut': 0 
+Sentiment: 'neg'
+
+
+it has low impact but it's a compelling story
+Total trees = 38
+'pos': 4 'neg': 0 'neut': 34 
+Sentiment: 'neut'
+
+
+it's a compelling story, but it has low impact
+Total trees = 66
+'pos': 0 'neg': 4 'neut': 62 
+Sentiment: 'neut'
+
+
+it has gut-wrenching impact and it is a compelling story
+Total trees = 42
+'pos': 0 'neg': 0 'neut': 42 
+Sentiment: 'neut'
+
+
+this does not have gut-wrenching impact but it's a compelling story
+Total trees = 58
+'pos': 50 'neg': 2 'neut': 6 
+Sentiment: 'pos'
+
+
+he is not happy
+Total trees = 1
+'pos': 0 'neg': 1 'neut': 0 
+Sentiment: 'neg'
+
+
+this compelling story with gut-wrenching impact
+Total trees = 10
+'pos': 0 'neg': 0 'neut': 10 
+Sentiment: 'neut'
+
+
+this may not have the dramatic gut-wrenching impact of other holocaust films, but it's a compelling story, mainly because of the way it's told by the people who were there
+Total trees = 23597
+'pos': 2296 'neg': 819 'neut': 20482 
+Sentiment: 'neut'
+
+
+the way it's told by the people who were there
+Total trees = 60
+'pos': 9 'neg': 9 'neut': 42 
+Sentiment: 'neut'
+
+
+a perfect example
+Total trees = 1
+'pos': 1 'neg': 0 'neut': 0 
+Sentiment: 'pos'
+
+
+manipulative movie making
+Total trees = 2
+'pos': 0 'neg': 2 'neut': 0 
+Sentiment: 'neg'
+
+
+shamelessly manipulative movie making
+Total trees = 1
+'pos': 0 'neg': 1 'neut': 0 
+Sentiment: 'neg'
+
+
+well-intentioned movie making
+Total trees = 2
+'pos': 2 'neg': 0 'neut': 0 
+Sentiment: 'pos'
+
+
+rancid movie making
+Total trees = 2
+'pos': 0 'neg': 2 'neut': 0 
+Sentiment: 'neg'
+
+
+well-intentioned but manipulative movie making
+Total trees = 1
+'pos': 0 'neg': 1 'neut': 0 
+Sentiment: 'neg'
+
+
+a perfect example of well-intentioned but manipulative movie making
+Total trees = 5
+'pos': 0 'neg': 0 'neut': 5 
+Sentiment: 'neut'
+
+
+a perfect example of rancid well-intentioned but shamelessly manipulative movie making
+Total trees = 5
+'pos': 0 'neg': 0 'neut': 5 
+Sentiment: 'neut'
